@@ -28,7 +28,7 @@ A short demo video is on my portfolio: [oussama-ben-abid.vercel.app](https://ous
 
 ## My contribution
 
- frontend: the booking flow with the calendar, the appointment countdown, the admin area for patients, employees, services and appointments, and the real-time updates over WebSockets. In the API, I worked on the database model and migrations, the JWT login and the appointment and service endpoints.
+In the frontend, I was responsible for the booking flow with the calendar, the appointment countdown, the admin area for patients, employees, services and appointments, and the real-time updates over WebSockets. In the API, I worked on the database model and migrations, the JWT login and the appointment and service endpoints.
 
 ## Run locally
 
