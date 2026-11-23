@@ -6,7 +6,7 @@ Team project at Hochschule Bremen (Medieninformatik), 2024.
 
 ![Patient view and practice view side by side](docs/screenshot.jpg)
 
-A short demo video is on my portfolio: [oussama-ben-abid.vercel.app](https://oussama-ben-abid.vercel.app)
+A short demo video is on my portfolio: [oussama-ben-abid.me](https://oussama-ben-abid.me)
 
 ## Features
 
