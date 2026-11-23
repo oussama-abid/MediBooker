@@ -1,27 +1,40 @@
 # MediBooker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+Online appointment booking for medical practices. Patients see free slots and book or cancel appointments online, and the practice team manages patients, staff, services and the schedule in one place. New bookings show up for the practice in real time.
 
-## Development server
+Team project at Hochschule Bremen (Medieninformatik), 2024.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![Patient view and practice view side by side](docs/screenshot.jpg)
 
-## Code scaffolding
+A short demo video is on my portfolio: [oussama-ben-abid.vercel.app](https://oussama-ben-abid.vercel.app)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
 
-## Build
+**For patients**
+- Register and log in
+- Pick a date in the calendar, see the free time slots and book an appointment
+- See upcoming appointments, with a countdown when an appointment is today
+- Cancel an appointment
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+**For the practice**
+- Manage patients, employees and services: add, edit, delete and filter
+- Appointment management with pagination, status filter and sorting by time
+- Real-time updates and a notification when a patient books an appointment
 
-## Running unit tests
+## Tech stack
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Frontend (this repo):** Angular 17, TypeScript, Bootstrap, Socket.IO client, SweetAlert2
+- **Backend:** Node.js, Express, Sequelize, MySQL, JWT, Socket.IO, Swagger, see [MediBooker-ApI](https://github.com/oussama-abid/MediBooker-ApI)
 
-## Running end-to-end tests
+## My contribution
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+I wrote most of this frontend: the booking flow with the calendar, the appointment countdown, the admin area for patients, employees, services and appointments, and the real-time updates over WebSockets. In the API, I worked on the database model and migrations, the JWT login and the appointment and service endpoints.
 
-## Further help
+## Run locally
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+npm install
+ng serve
+```
+
+Then open http://localhost:4200. The app expects the API to be running; its URL is set in `src/enviroments/enviroment.ts`.
